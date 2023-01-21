@@ -1,0 +1,18 @@
+const preciousStones = [
+  {name: "Diamond", price: 3000},
+  {name: "Emerald", price: 1200},
+  {name: "Sapphire", price: 1800},
+  {name: "Ruby", price: 2000}
+];
+
+function trackPrice(stoneName) {
+  for (let i = 0; i < preciousStones.length; i++) {
+    if (preciousStones[i].name === stoneName) {
+      console.log(`The current price of ${stoneName} is ${preciousStones[i].price}`);
+      break;
+    }
+  }
+}
+
+trackPrice("Diamond"); // The current price of Diamond is 3000
+trackPrice("Ruby"); // The current price of Ruby is 2000
